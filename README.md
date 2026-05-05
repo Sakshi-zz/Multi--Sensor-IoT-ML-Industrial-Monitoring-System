@@ -170,3 +170,91 @@ Also supports CSV export.
 
 ### Screenshots
 
+#### Sensor Distributions
+
+```Markdown
+![Sensor Distribution](images/distribution_plot.png)
+```
+
+#### Model State Plot
+
+```Markdown
+![Sound Distribution](images/state_plot.png)
+```
+
+#### Streamlit Dashboard
+
+```Markdown
+![Live Dashboard](images/dashboard_live.png)
+```
+
+```Markdown
+![Logs Dashboard](images/dashboard_logs.png)
+```
+----
+
+### Repository Structure
+
+```
+Multi--Sensor-IoT-ML-Industrial-Monitoring-System/
+│
+├── Model_Training/
+|   ├── modelTraining_rawFeatures.ipynb
+|   ├── modelTraining_updatedDataset.ipynb
+├── app/
+|   ├── app_v1.py
+├── data/
+|   ├── EDA.ipynb
+|   ├── Synthetic_industrial_sensor_data_V4.csv
+|   ├── syntheticDataset_GenerationCode.py
+|   ├── updated_data.csv
+├── images/
+│   ├── temp_distribution.png
+│   ├── vibration_distribution.png
+│   ├── sound_distribution.png
+│   ├── state_plot.png
+│   ├── dashboard_live.png
+│   └── dashboard_logs.png
+├── model/
+│   ├── I_Tree.pkl
+│   └── scaler.pkl
+├── LICENSE
+├── README.md
+└── requirements.txt
+```
+----
+
+### Installation
+
+#### Clone the repo:
+```Bash
+git clone https://github.com/Shagun-Thakur/Multi--Sensor-IoT-ML-Industrial-Monitoring-System.git
+cd Multi--Sensor-IoT-ML-Industrial-Monitoring-System
+```
+#### Install dependencies:
+```Bash
+pip install -r requirements.txt
+```
+#### Run the Dashboard
+```Bash
+python -m streamlit run app/app_v1.py
+```
+----
+
+### Arduino Usage
+To use hardware input:
+1. Connect Arduino by USB
+2. Open dashboard
+3. Select Arduino Mode
+4. Select serial port
+5. Click Connect
+Expected serial format:
+```
+temperature, vibration, sound
+```
+
+----
+
+### Authors
+- ShagunThakur
+- Sakshi Rana
