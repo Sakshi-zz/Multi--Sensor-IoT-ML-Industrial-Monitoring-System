@@ -172,25 +172,20 @@ Also supports CSV export.
 
 #### Sensor Distributions
 
-```Markdown
 ![Sensor Distribution](images/distribution_plot.png)
-```
+
 
 #### Model State Plot
 
-```Markdown
 ![Sound Distribution](images/state_plot.png)
-```
 
 #### Streamlit Dashboard
 
-```Markdown
 ![Live Dashboard](images/dashboard_live.png)
-```
 
-```Markdown
+
 ![Logs Dashboard](images/dashboard_logs.png)
-```
+
 ----
 
 ### Repository Structure
