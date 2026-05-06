@@ -576,7 +576,7 @@ if page == "Live Monitor":
                 X_scaled_init = SCALER.transform(X_init)
                 init_scores   = MODEL.decision_function(X_scaled_init)
                 st.session_state.thresholds = {
-                    "yellow": np.percentile(init_scores, 15),
+                    "yellow": np.percentile(init_scores, 25),
                     "red": np.percentile(init_scores, 5),
                 }
 
