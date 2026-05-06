@@ -766,8 +766,7 @@ elif page == "Logs":
             return ""
 
         st.dataframe(
-            df.style.applymap(style_state, subset=["State"]),
-            use_container_width=True, height=500,
+            df.style.map(style_state, subset=["State"]),
         )
 
         st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
