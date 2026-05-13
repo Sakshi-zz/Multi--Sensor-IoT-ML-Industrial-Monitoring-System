@@ -191,31 +191,52 @@ Also supports CSV export.
 ### Repository Structure
 
 ```
-Multi--Sensor-IoT-ML-Industrial-Monitoring-System/
+Multi-Sensor-IoT-ML-Industrial-Monitoring-System/
 │
-├── Model_Training/
-|   ├── modelTraining_rawFeatures.ipynb
-|   ├── modelTraining_updatedDataset.ipynb
-├── app/
-|   ├── app_v1.py
-├── data/
-|   ├── EDA.ipynb
-|   ├── Synthetic_industrial_sensor_data_V4.csv
-|   ├── syntheticDataset_GenerationCode.py
-|   ├── updated_data.csv
-├── images/
+├── Arduino-safety-monitor/                   
+│   ├── Real_hardware/
+│   │   ├── Images/
+│   │   │   └── Image.jpeg
+│   │   ├── Safety_monitor/
+│   │   │   └── safety_monitor.ino
+│   │   ├── Wokwi_stimulation/
+│   │   │   ├── diagram.json
+│   │   │   ├── ky-037.chip.c
+│   │   │   ├── ky-037.chip.json
+│   │   │   ├── libraries.txt
+│   │   │   ├── sketch.ino
+│   │   │   └── wokwi-project.txt
+│   │   ├── LICENSE.txt
+│   │   └── README.txt
+│   │
+├── Model_Training/                             
+│   ├── modelTraining_rawFeatures.ipynb
+│   └── modelTraining_updatedDataset.ipynb
+│
+├── app/                                        
+│   └── app_v1.py
+│
+├── data/                                       
+│   ├── EDA.ipynb
+│   ├── Synthetic_industrial_sensor_data_V4.csv
+│   ├── syntheticDataset_GenerationCode.py
+│   └── updated_data.csv
+│
+├── images/                                
 │   ├── temp_distribution.png
 │   ├── vibration_distribution.png
 │   ├── sound_distribution.png
 │   ├── state_plot.png
 │   ├── dashboard_live.png
 │   └── dashboard_logs.png
-├── model/
+│
+├── model/                                      
 │   ├── I_Tree.pkl
 │   └── scaler.pkl
-├── LICENSE
-├── README.md
-└── requirements.txt
+│
+├── LICENSE                                     
+├── README.md                                  
+└── requirements.txt                            
 ```
 ----
 
