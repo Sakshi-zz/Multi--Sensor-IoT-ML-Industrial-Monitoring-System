@@ -1,0 +1,14 @@
+{
+  "name": "KY-037 Sound Sensor",
+  "pins": ["VCC", "GND", "D0", "A0"],
+  "controls": [
+    {
+      "id": "threshold",
+      "label": "Trigger Threshold (%)",
+      "type": "range",
+      "min": 0,
+      "max": 100,
+      "default": 50
+    }
+  ]
+}
